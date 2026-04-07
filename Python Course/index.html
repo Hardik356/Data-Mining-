@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNITY | Professional Terminal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body { background-color: #050505; color: #d1d1d1; font-family: 'JetBrains Mono', monospace; }
+        .terminal-border { border-color: #2a2a2a; }
+        .bg-terminal-dark { background-color: #0a0a0a; }
+        .text-terminal-green { color: #00ff00; }
+        .text-terminal-red { color: #ff3b3b; }
+        .text-terminal-amber { color: #ffb800; }
+    </style>
+</head>
+<body class="h-screen flex flex-col overflow-hidden text-[11px]">
+
+    <header class="border-b terminal-border bg-terminal-dark p-2 flex justify-between items-center">
+        <div class="flex items-center space-x-4">
+            <span class="text-terminal-amber font-bold text-sm">UNITY TERMINAL v3.1</span>
+            <span class="text-zinc-600">MARKET: <span class="text-terminal-green">OPEN</span></span>
+        </div>
+        <div class="flex space-x-4">
+            <span>USD/JPY: 149.22 <span class="text-terminal-red">▼</span></span>
+            <span>BTC/USD: 64,212 <span class="text-terminal-green">▲</span></span>
+        </div>
+    </header>
+
+    <div class="flex flex-1 overflow-hidden">
+        <aside class="w-64 border-r terminal-border bg-terminal-dark flex flex-col">
+            <div class="p-2 bg-blue-900/20 text-blue-400 border-b terminal-border font-bold">WATCHLIST</div>
+            <div class="flex-1 overflow-y-auto">
+                <table class="w-full">
+                    <tr class="border-b terminal-border text-zinc-500 text-left">
+                        <th class="p-2">TICKER</th>
+                        <th class="p-2 text-right">LAST</th>
+                        <th class="p-2 text-right">CHG%</th>
+                    </tr>
+                    <tr class="hover:bg-zinc-900 cursor-pointer border-b terminal-border/30">
+                        <td class="p-2 font-bold text-white">AAPL</td>
+                        <td class="p-2 text-right">182.44</td>
+                        <td class="p-2 text-right text-terminal-green">+1.2%</td>
+                    </tr>
+                    <tr class="hover:bg-zinc-900 cursor-pointer border-b terminal-border/30">
+                        <td class="p-2 font-bold text-white">NVDA</td>
+                        <td class="p-2 text-right">726.11</td>
+                        <td class="p-2 text-right text-terminal-green">+4.5%</td>
+                    </tr>
+                    <tr class="hover:bg-zinc-900 cursor-pointer border-b terminal-border/30">
+                        <td class="p-2 font-bold text-white">TSLA</td>
+                        <td class="p-2 text-right">193.55</td>
+                        <td class="p-2 text-right text-terminal-red">-2.1%</td>
+                    </tr>
+                </table>
+            </div>
+        </aside>
+
+        <main class="flex-1 flex flex-col bg-black">
+            <div class="flex-1 p-2">
+                <div class="w-full h-full bg-zinc-900 rounded border terminal-border flex items-center justify-center relative overflow-hidden">
+                    <div class="absolute top-4 left-4 text-lg font-bold text-white z-10">NVDA:NASDAQ <span class="text-sm font-normal text-zinc-500">NVIDIA CORP</span></div>
+                    <p class="text-zinc-700 italic">Technical Chart Engine Loading...</p>
+                    </div>
+            </div>
+
+            <div class="h-40 border-t terminal-border p-4 grid grid-cols-4 gap-4 bg-terminal-dark">
+                <div>
+                    <h4 class="text-zinc-500 mb-2 uppercase">Fundamentals</h4>
+                    <div class="flex justify-between border-b terminal-border py-1"><span>P/E RATIO</span><span class="text-white">32.4x</span></div>
+                    <div class="flex justify-between border-b terminal-border py-1"><span>DIV YIELD</span><span class="text-white">0.45%</span></div>
+                </div>
+                <div>
+                    <h4 class="text-zinc-500 mb-2 uppercase">Risk Metrics</h4>
+                    <div class="flex justify-between border-b terminal-border py-1"><span>BETA</span><span class="text-white">1.24</span></div>
+                    <div class="flex justify-between border-b terminal-border py-1"><span>52W HIGH</span><span class="text-white">740.00</span></div>
+                </div>
+            </div>
+        </main>
+
+        <aside class="w-80 border-l terminal-border bg-terminal-dark p-2">
+            <div class="text-terminal-amber border-b terminal-border font-bold mb-4">LIVE NEWS FEED</div>
+            <div class="space-y-4">
+                <div class="border-l-2 border-terminal-amber pl-2">
+                    <p class="text-[10px] text-zinc-600">09:44 AM</p>
+                    <p class="text-white leading-tight">CHIP SECTOR RALLIES AS AI DEMAND OUTPACES SEMICONDUCTOR SUPPLY CHAIN CAPABILITIES</p>
+                </div>
+                <div class="border-l-2 border-zinc-700 pl-2">
+                    <p class="text-[10px] text-zinc-600">09:12 AM</p>
+                    <p class="text-white leading-tight">CENTRAL BANK OFFICIALS SIGNAL "PATIENT" APPROACH TO RATE CUTS IN Q3</p>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <footer class="bg-blue-900 h-6 flex items-center px-4 text-white text-[10px] space-x-8 uppercase font-bold">
+        <marquee>UNITY FINANCE >> AAPL +1.2% | TSLA -2.1% | NVDA +4.5% | RELIANCE +0.4% | MSFT +1.1% | BTC +0.8%</marquee>
+    </footer>
+</body>
+</html>

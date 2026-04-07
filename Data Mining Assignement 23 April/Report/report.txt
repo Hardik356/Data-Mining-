@@ -1,0 +1,20 @@
+Word Report (ITAG7105_Airline_Analytics_Report.docx) — ~872KB, fully structured to the assignment spec:
+
+Title page with module details and GenAI declaration
+All 6 sections following the prescribed structure precisely
+17 embedded figures generated from your actual data
+2 results tables (descriptive stats + model comparison)
+30+ Harvard-style references (academic + practitioner mix)
+Appendix describing the Python code structure
+
+📓 Jupyter Notebook (ITAG7105_Airline_Analytics.ipynb) — production-grade code with:
+
+Docstrings on every function, meaningful variable names, inline comments
+Fixed RANDOM_SEED = 42 throughout for reproducibility
+Modular separation: load → clean → analyse → model → evaluate
+
+
+Key real results from your dataset:
+ModelAccuracyF1AUCRF Combined (best)98.1%96.8%99.9%RF Numerical96.3%93.9%98.9%GB Text91.4%85.1%97.4%
+Top finding: Value For Money (r=0.847) is the strongest predictor of recommendation — stronger than Overall Rating (r=0.573), a counterintuitive and academically significant result worth highlighting in your discussion.
+To submit: Add your name/student number on the title page and run the notebook once locally to regenerate all figures.
